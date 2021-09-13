@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family:'Courier New', Courier, monospace ;
+}
+.name {
+    background-color: black;
+}
+
+
+header > nav > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns:  repeat(4, auto);
+    width: 400px;
+    margin: auto;
+    text-align: center;
+   
+}
+
+header > nav {
+    padding: 20px 0;
+    background-color: black;
+}
+
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:blanchedalmond
+}
+header ul > li {
+    position: relative;
+
+}
+header .submenu{
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    padding: 5px 10px;
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 200ms;
+    color: blanchedalmond;
+    text-transform: uppercase;
+    line-height: 2;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+}
+header .submenu a{
+    color:blanchedalmond;
+}
+header li:hover .submenu {
+    transform: scaleY(1);
+  
+}
+header:hover a{
+    color: white;
+}
+
+header .submenu1{
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    padding: 5px 10px;
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 200ms;
+    color: blanchedalmond;
+    text-transform: uppercase;
+    line-height: 2;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+}
+header .submenu1 a{
+    color:blanchedalmond;
+}
+header li:hover .submenu {
+    transform: scaleY(1);
+}
